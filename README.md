@@ -82,7 +82,7 @@
     }
   }
   ```
-  -- 마운트 해제
+  - 마운트 해제
   ```javascript
   componentWillUnmount() {
     // 컴포넌트가 마운트 해제되어 제거되기 직전에 호출
