@@ -1,0 +1,6 @@
+{
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "[scss]": {
+    "editor.formatOnSave": true
+  }
+}

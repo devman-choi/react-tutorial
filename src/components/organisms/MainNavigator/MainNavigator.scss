@@ -1,0 +1,13 @@
+.navigator {
+    padding: 1rem;
+    a {
+        color: inherit;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .selected {
+        color: blue
+    }
+}

@@ -1,0 +1,34 @@
+.markdown {
+  h1 {
+    &::after {
+      content: ' ';
+      margin-top: 0.5rem;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid grey;
+    }
+  }
+  pre {
+    border-radius: 0.875rem;
+    padding: 1rem 2rem;
+  }
+
+  blockquote {
+    p {
+      color: grey;
+    }
+    p::before {
+      content: '"';
+    }
+    p::after {
+      content: '"';
+    }
+  }
+  img {
+    max-width: 700px;
+  }
+
+  :global .hljs-comment {
+    font-style: normal;
+  }
+}

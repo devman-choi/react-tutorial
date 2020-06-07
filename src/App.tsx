@@ -1,13 +1,16 @@
 import React from 'react';
-import Root from 'pages/Root';
-import './App.css';
+import Root from 'components/pages/Root';
+import { Provider } from 'mobx-react';
+import AppCtxStore from 'stores/appCtx';
 
-function App() {
+const appCtx = new AppCtxStore();
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-        <Root />
-    </div>
+    <Provider appCtx={appCtx}>
+      <Root />
+    </Provider>
   );
-}
+};
 
 export default App;

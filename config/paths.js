@@ -65,6 +65,8 @@ module.exports = {
   proxySetup: resolveApp('src/setupProxy.js'),
   appNodeModules: resolveApp('node_modules'),
   publicUrlOrPath,
+  style: resolveApp('src/style'),
+  lib: resolveApp('src/lib'),
 };
 
 

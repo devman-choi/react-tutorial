@@ -451,6 +451,21 @@ module.exports = function(webpackEnv) {
                 },
               }),
             },
+            // src/style에 포함된 scss를 제외한 나머지는 모두 module 사용하도록 함.
+            {
+              test: sassRegex,
+              exclude: [paths.style, paths.lib],
+              use: getStyleLoaders(
+                {
+                  importLoaders: 3,
+                  sourceMap: isEnvProduction && shouldUseSourceMap,
+                  modules: {
+                    getLocalIdent: getCSSModuleLocalIdent,
+                  },
+                },
+                'sass-loader'
+              ),
+            },
             // Opt-in support for SASS (using .scss or .sass extensions).
             // By default we support SASS Modules with the
             // extensions .module.scss or .module.sass
