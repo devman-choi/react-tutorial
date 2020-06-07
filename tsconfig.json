@@ -20,7 +20,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "jsxFactory": "React.createElement",
   },
   "include": [
     "src", "@types"
