@@ -16,6 +16,12 @@
 - Styles (준비중)
 - Hooks (준비중)
 
+## 실행
+```console
+$ git clone https://github.com/devman-choi/react-tutorial.git
+$ cd react-tutorial
+$ yarn start
+```
 ## 개발환경
 - windows 10
 - node.js(v12.17.0)
