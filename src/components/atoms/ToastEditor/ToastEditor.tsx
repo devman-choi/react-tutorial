@@ -10,7 +10,9 @@ class Markdown extends React.Component {
 
   handleClick = (): void => {
     if (this.resultRef.current !== null && this.editorRef.current !== null)
-      this.resultRef.current.innerHTML = this.editorRef.current.getInstance().getHtml();
+      this.resultRef.current.innerHTML = this.editorRef.current
+        .getInstance()
+        .getHtml();
   };
 
   render(): React.ReactNode {

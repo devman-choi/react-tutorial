@@ -39,14 +39,14 @@ export default class Lifecycle extends Component {
     // 사용례는 흔치 않지만, DOM반영 후 스크롤 위치를 지정해줘야 할 경우를 생각해 볼 수 있다.
     return null;
   }
-  componentDidMount(prevProps, prevState, snapshot) {
+  componentDidMount() {
     // DOM 노드가 있어야하는 초기화 작업은 여기서 하자.
     // 그리고 외부에서 데이터를 불러와야 한다면, 네트워크 요청을 보내기 좋은 위치이다.
     // 여기서 setState()를 호출하는 경우도 있는데, 이렇게 되면 두번 rendering이 이루어진다.
     // 다만, Modal이라던가, Tooltip같은 DOM노드의 크기나 위치를 먼저 측정해야하는 경우라면 이러한 방식이 필요하다.
     // 참고로 snapshot 파라미터는 getSnapshotBeforeUpdate의 리턴 value이다.
   }
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps, prevState, snapshot) {
     // todo
   }
 
