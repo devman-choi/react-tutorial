@@ -10,7 +10,7 @@
 - JSX
 - Components & Props
 - State
-- Lifecycle (준비중)
+- Lifecycle
 - Events (준비중)
 - Forms (준비중)
 - Styles (준비중)
